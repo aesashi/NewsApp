@@ -28,12 +28,13 @@ const ClipStack = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Clip" component={ClipScreen} />
+      <Stack.Screen name="Article" component={ArticleScreen} />
     </Stack.Navigator>
   );
 };
 
 const screenOption = ({route}) => ({
-  tabBarIcon: ({focused, color, size}) => {
+  tabBarIcon: ({color, size}) => {
     let iconName;
     switch (route.name) {
       case 'Home':

@@ -17,4 +17,5 @@ const ClipButton = ({onPress, enabled}) => {
   );
 };
 
+
 export default ClipButton;
