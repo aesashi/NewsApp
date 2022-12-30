@@ -1,6 +1,11 @@
 import React from 'react';
 import AppNavigator from './navigation/AppNavigator';
+import store from './store';
 
 export default function App() {
-  return <AppNavigator />;
+  return (
+  <Provider>
+    <AppNavigator />;
+  </Provider>
+  );
 }
